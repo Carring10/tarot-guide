@@ -2,17 +2,39 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
+  background-color: rgb(24, 24, 24);
+}
+
+nav {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid white;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+  color: white;
+  padding: 10px;
+}
+
+h1 {
+  font-family: 'Cinzel', serif;
+  color: white;
 }
 
 .card-list {
-  background-color: blueviolet;
   width: 50%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .card-item {
-  background-color: cornflowerblue;
   margin: 10px;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  color: white;
 }
