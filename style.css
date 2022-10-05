@@ -16,12 +16,19 @@ nav {
 nav a {
   text-decoration: none;
   font-family: 'Cinzel', serif;
+  font-size: 16px;
   color: white;
-  padding: 10px;
+  padding: 15px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #7866ff;
 }
 
 h1 {
   font-family: 'Cinzel', serif;
+  font-size: 45px;
   color: white;
 }
 
