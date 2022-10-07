@@ -33,15 +33,20 @@ h1 {
 }
 
 .card-list {
-  width: 50%;
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .card-item {
+  position: relative;
   margin: 10px;
   text-align: center;
   font-family: 'Cinzel', serif;
   color: white;
+}
+
+.card-content {
+  position: absolute;
 }
