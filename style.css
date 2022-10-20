@@ -50,14 +50,18 @@ h1 {
 }
 
 .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   position: absolute;
   width: 100%;
   height: auto;
-  top: 10%;
-  bottom: 1%;
+  top: 0px;
+  bottom: 0px;
   opacity: 0;
   transition: .5s ease;
   color: white;
+  font-size: 12px;
   text-align: center;
   font-family: 'Cinzel', serif;
 }
@@ -70,7 +74,3 @@ h1 {
   opacity: 1;
 }
 
-.text {
-  color: white;
-  opacity: 1;
-}
