@@ -42,11 +42,35 @@ h1 {
 .card-item {
   position: relative;
   margin: 10px;
-  text-align: center;
-  font-family: 'Cinzel', serif;
-  color: white;
+}
+
+.image {
+  opacity: 1;
+  transition: .5s ease;
 }
 
 .card-content {
   position: absolute;
+  width: 100%;
+  height: auto;
+  top: 10%;
+  bottom: 1%;
+  opacity: 0;
+  transition: .5s ease;
+  color: white;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+}
+
+.card-item:hover .image {
+  opacity: 0.3;
+}
+
+.card-content:hover {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  opacity: 1;
 }
