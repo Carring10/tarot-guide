@@ -54,26 +54,33 @@ h1 {
 .card-content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   position: absolute;
-  width: 300px;
+  padding: 0px 5px;
   height: auto;
   top: 0px;
   bottom: 0px;
   opacity: 0;
   transition: .5s ease;
   color: white;
-  font-size: 12px;
+  font-size: 13px;
   text-align: center;
   font-family: 'Cinzel', serif;
 }
 
 .card-item:hover .image {
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .card-content:hover {
   opacity: 1;
+}
+
+.card-content h3 {
+  font-weight: normal;
+}
+
+.flavor-text {
+  font-size: 10px;
 }
 
 
