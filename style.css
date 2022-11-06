@@ -80,7 +80,14 @@ h1 {
 }
 
 .flavor-text {
-  font-size: 10px;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.card-summary {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 15px;
 }
 
 
