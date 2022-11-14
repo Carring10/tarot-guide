@@ -30,6 +30,14 @@ h1 {
   font-family: 'Cinzel', serif;
   font-size: 45px;
   color: white;
+  margin: 20px;
+}
+
+.suit-summary {
+  font-family: 'Source Serif Pro', serif;
+  color: white;
+  width: 50%;
+  text-align: center;
 }
 
 .card-list {
@@ -37,6 +45,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 20px;
 }
 
 .card-item {
