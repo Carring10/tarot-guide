@@ -25,9 +25,16 @@ body {
 nav {
   width: 100%;
   padding: 25px;
-  margin: 20px;
   border: 1px solid white;
   text-align: center;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
 }
 
 nav a {
