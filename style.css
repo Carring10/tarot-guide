@@ -6,9 +6,26 @@ body {
   background-color: rgb(24, 24, 24);
 }
 
+.suit-summary {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 20px;
+  margin: 20px;
+  color: white;
+  width: 50%;
+  text-align: center;
+}
+
+.suit-summary h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 45px;
+  color: white;
+  margin: 20px;
+}
+
 nav {
   width: 100%;
-  padding: 20px;
+  padding: 25px;
+  margin: 20px;
   border: 1px solid white;
   text-align: center;
 }
@@ -16,29 +33,14 @@ nav {
 nav a {
   text-decoration: none;
   font-family: 'Cinzel', serif;
-  font-size: 16px;
+  font-size: 20px;
   color: white;
-  padding: 15px;
+  padding: 20px;
   transition: 0.3s;
 }
 
 nav a:hover {
   color: #7866ff;
-}
-
-h1 {
-  font-family: 'Cinzel', serif;
-  font-size: 45px;
-  color: white;
-  margin: 20px;
-}
-
-.suit-summary {
-  font-family: 'Source Serif Pro', serif;
-  font-size: 20px;
-  color: white;
-  width: 50%;
-  text-align: center;
 }
 
 .card-list {
