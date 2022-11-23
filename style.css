@@ -24,18 +24,11 @@ body {
 
 nav {
   width: 100%;
-  padding: 25px;
   border: 1px solid white;
   text-align: center;
+  padding: 20px;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  width: 100%;
-}
 
 nav a {
   text-decoration: none;
@@ -50,12 +43,24 @@ nav a:hover {
   color: #7866ff;
 }
 
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .card-list {
+  padding-top: 60px;
+}
+
 .card-list {
   width: 70%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 20px;
+  padding: 20px;
 }
 
 .card-item {
