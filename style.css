@@ -4,6 +4,7 @@ body {
   align-items: center;
   margin: 0;
   background-color: rgb(24, 24, 24);
+  overflow-x: hidden;
 }
 
 .suit-summary {
