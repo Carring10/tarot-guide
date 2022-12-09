@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -18,7 +22,7 @@ body {
 
 .suit-summary h1 {
   font-family: 'Cinzel', serif;
-  font-size: 45px;
+  font-size: 50px;
   color: white;
   margin: 40px;
 }
@@ -26,7 +30,7 @@ body {
 nav {
   width: 100%;
   border: 1px solid white;
-  text-align: center;
+  text-align: left;
   padding: 20px;
   background-color: rgb(24, 24, 24);
 }
@@ -35,9 +39,10 @@ nav {
 nav a {
   text-decoration: none;
   font-family: 'Cinzel', serif;
-  font-size: 20px;
+  font-size: 22px;
   color: white;
-  padding: 20px;
+  padding: 15px;
+  margin-left: 25px;
   transition: 0.3s;
 }
 
@@ -58,7 +63,6 @@ nav a:hover {
 }
 
 .card-list {
-  width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
