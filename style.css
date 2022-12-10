@@ -11,12 +11,20 @@ body {
   overflow-x: hidden;
 }
 
+section {
+  background-color: #1b4332;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .suit-summary {
   font-family: 'Source Serif Pro', serif;
   font-size: 20px;
   margin: 20px;
   color: white;
-  width: 40%;
+  width: 60%;
   text-align: center;
 }
 
@@ -24,7 +32,7 @@ body {
   font-family: 'Cinzel', serif;
   font-size: 50px;
   color: white;
-  margin: 40px;
+  margin: 0;
 }
 
 nav {
@@ -39,11 +47,11 @@ nav {
 nav a {
   text-decoration: none;
   font-family: 'Cinzel', serif;
-  font-size: 22px;
+  font-size: 20px;
   color: white;
-  padding: 15px;
-  margin-left: 25px;
+  padding: 10px;
   transition: 0.3s;
+  margin-left: 30px;
 }
 
 nav a:hover {
@@ -68,6 +76,7 @@ nav a:hover {
   justify-content: center;
   margin: 40px;
   padding: 20px;
+  width: 80%;
 }
 
 .card-item {
