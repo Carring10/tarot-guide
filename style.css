@@ -42,7 +42,7 @@ span {
 nav {
   width: 100%;
   border-top: 1px solid rgb(65, 65, 65);
-  text-align: center;
+  text-align: left;
   padding: 20px;
   background-color: #1c0b1f;
   box-shadow: 10px 5px 5px #0c0c0c;
@@ -61,6 +61,16 @@ nav a {
 
 nav a:hover {
   color: #9c772c;
+}
+
+button {
+  float: right;
+  margin-right: 30px;
+  padding: 10px;
+  background-color: #1c0b1f;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
