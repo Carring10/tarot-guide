@@ -1,4 +1,4 @@
-if (window.location.pathname == '/index.html') {
+if (window.location.pathname == '/') {
   const navbar = document.getElementById('navbar');
   const sticky = navbar.offsetTop;
 
@@ -26,10 +26,12 @@ const cardArray = [
   }
 ]
 
-const container = document.querySelector('.container')
-const card = document.createElement('img')
-card.setAttribute('src', 'images/major-arcana/the-fool.jpg')
-container.appendChild(card)
+if (window.location.pathname == '/test.html') {
+  const container = document.querySelector('.container')
+  const card = document.createElement('img')
+  card.setAttribute('src', 'images/major-arcana/the-fool.jpg')
+  container.appendChild(card)
 
-console.log(cardArray[0].name);
+}
 
+console.log(window.location.pathname)
