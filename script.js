@@ -29,7 +29,7 @@ const cardArray = [
 if (window.location.pathname == '/test.html') {
   const container = document.querySelector('.container')
   const card = document.createElement('img')
-  card.setAttribute('src', 'images/major-arcana/the-fool.jpg')
+  card.setAttribute('src', 'images/card-back.png')
   container.appendChild(card)
 
 }
