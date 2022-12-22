@@ -103,7 +103,7 @@ const cardArray = [
   {
     name: 'world',
     img: 'images/major-arcana/the-world.jpg'
-  },
+  }
 ]
 
 if (window.location.pathname == '/test.html') {
@@ -112,6 +112,14 @@ if (window.location.pathname == '/test.html') {
   card.setAttribute('src', 'images/card-back.png')
   container.appendChild(card)
 
+  function getRandomCard(arr) {
+    const index = Math.floor(Math.random() * arr.length);
+    const card = arr[index];
+    return card;
+  }
+
+  const result = getRandomCard(cardArray)
+
+  console.log(result)
 }
 
-console.log(window.location.pathname)
