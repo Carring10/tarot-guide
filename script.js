@@ -106,20 +106,28 @@ const cardArray = [
   }
 ]
 
-if (window.location.pathname == '/test.html') {
-  const container = document.querySelector('.container')
-  const card = document.createElement('img')
-  card.setAttribute('src', 'images/card-back.png')
-  container.appendChild(card)
+const container = document.querySelector('.container');
 
-  function getRandomCard(arr) {
-    const index = Math.floor(Math.random() * arr.length);
-    const card = arr[index];
-    return card;
+function createCards() {
+  for (let i = 0; i < 5; i++) {
+    const cardImg = document.createElement('img');
+
+    cardImg.setAttribute('src', 'images/card-back.png');
+    cardImg.setAttribute('id', 'card-back');
+    container.appendChild(cardImg);
   }
-
-  const result = getRandomCard(cardArray)
-
-  console.log(result)
 }
+
+
+function getRandomCard(arr) {
+  const index = Math.floor(Math.random() * arr.length);
+  const card = arr[index];
+
+  return card;
+}
+
+const result = getRandomCard(cardArray);
+// document.getElementById("card-back").addEventListener("click", console.log(result))
+
+createCards();
 
