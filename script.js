@@ -113,20 +113,18 @@ function createCards() {
     const cardImg = document.createElement('img');
 
     cardImg.setAttribute('src', 'images/card-back.png');
-    cardImg.setAttribute('id', 'card-back');
     container.appendChild(cardImg);
+
+    cardImg.addEventListener('click', console.log(shuffleCards(cardArray, 5)));
   }
 }
 
 
-function getRandomCard(arr) {
-  const index = Math.floor(Math.random() * arr.length);
-  const card = arr[index];
+function shuffleCards(arr, num) {
+  const shuffled = [...arr].sort(() => 0.5 - Math.random());
 
-  return card;
+  return shuffled.slice(0, num);
 }
-
-const result = getRandomCard(cardArray);
 // document.getElementById("card-back").addEventListener("click", console.log(result))
 
 createCards();
