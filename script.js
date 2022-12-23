@@ -113,9 +113,10 @@ function createCards() {
     const cardImg = document.createElement('img');
 
     cardImg.setAttribute('src', 'images/card-back.png');
+    cardImg.setAttribute('id', i);
     container.appendChild(cardImg);
 
-    cardImg.addEventListener('click', console.log(shuffleCards(cardArray, 5)));
+    cardImg.addEventListener('click', console.log(shuffleCards(cardArray, 1)));
   }
 }
 
@@ -125,7 +126,6 @@ function shuffleCards(arr, num) {
 
   return shuffled.slice(0, num);
 }
-// document.getElementById("card-back").addEventListener("click", console.log(result))
 
 createCards();
 
