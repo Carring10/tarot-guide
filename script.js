@@ -116,7 +116,7 @@ function createCards() {
     cardImg.setAttribute('id', i);
     container.appendChild(cardImg);
 
-    cardImg.addEventListener('click', console.log(shuffleCards(cardArray, 1)));
+    cardImg.addEventListener('click', function() {console.log(shuffleCards(cardArray, 1))});
   }
 }
 
