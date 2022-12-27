@@ -1,4 +1,4 @@
-if (window.location.pathname == '/') {
+if (window.location.pathname == '/' | 'index.html') {
   const navbar = document.getElementById('navbar');
   const sticky = navbar.offsetTop;
 
@@ -116,7 +116,8 @@ function createCards() {
     cardImg.setAttribute('id', i);
     container.appendChild(cardImg);
 
-    cardImg.addEventListener('click', function() {console.log(shuffleCards(cardArray, 1))});
+    const card = shuffleCards(cardArray, 1);
+    cardImg.addEventListener('click', function() {console.log(card)});
   }
 }
 
@@ -125,6 +126,9 @@ function shuffleCards(arr, num) {
   const shuffled = [...arr].sort(() => 0.5 - Math.random());
 
   return shuffled.slice(0, num);
+}
+
+function flipCard() {
 }
 
 createCards();
