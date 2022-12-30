@@ -107,7 +107,7 @@ const cardArray = [
 ]
 
 const container = document.querySelector('.container');
-const card = shuffleCards(cardArray, cardArray.length);
+const card = shuffleCards(cardArray);
 
 function createCards() {
   for (let i = 0; i < 5; i++) {
@@ -118,17 +118,16 @@ function createCards() {
 
     cardImg.addEventListener('click', function () {
       cardImg.setAttribute('src', card[0].img);
+      // remove the first card to prevent duplicates
       card.shift();
     })
   }
 }
 
+function shuffleCards(arr) {
+  const shuffledCards = [...arr].sort(() => 0.5 - Math.random());
 
-function shuffleCards(arr, num) {
-  const shuffled = [...arr].sort(() => 0.5 - Math.random());
-  const randomCard = shuffled.slice(0, num);
- 
-  return randomCard
+  return shuffledCards;
 }
 
 createCards();
