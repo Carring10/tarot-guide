@@ -107,7 +107,9 @@ const cardArray = [
 ]
 
 const container = document.querySelector('.container');
-const card = shuffleCards(cardArray);
+const cards = shuffleCards(cardArray);
+let chosenCards = [];
+console.log('chosenCards', chosenCards)
 
 function createCards() {
   for (let i = 0; i < 5; i++) {
@@ -116,15 +118,18 @@ function createCards() {
     cardImg.setAttribute('src', 'images/card-back.png');
     container.appendChild(cardImg);
 
+    // reveal card
     cardImg.addEventListener('click', function () {
-      cardImg.setAttribute('src', card[0].img);
+      chosenCards.push(cards[0]);
+      cardImg.setAttribute('src', cards[0].img);
       // remove the first card to prevent duplicates
-      card.shift();
-    })
+      cards.shift();
+    }, {once : true})
   }
 }
 
 function shuffleCards(arr) {
+  // spread array into a list of arguments to avoid "NaN" output
   const shuffledCards = [...arr].sort(() => 0.5 - Math.random());
 
   return shuffledCards;
