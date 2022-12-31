@@ -129,7 +129,7 @@ const cardArray = [
 ]
 
 const container = document.querySelector('.container');
-const cardReading = document.querySelector('.card-reading');
+const descriptions = document.querySelector('.descriptions');
 
 const cards = shuffleCards(cardArray);
 const chosenCards = [];
@@ -160,9 +160,17 @@ function shuffleCards(arr) {
 }
 
 function revealMeaning() {
-  chosenCards.forEach(card => {
-    console.log(card.description);
-  })
+  if (chosenCards.length === 5) {
+    chosenCards.forEach(card => {
+      const reading = document.createElement('p');
+      const text = document.createTextNode(card.description);
+
+      descriptions.appendChild(reading);
+      reading.appendChild(text);
+
+      console.log(card.description);
+    })
+  }
 }
 
 createCards();
