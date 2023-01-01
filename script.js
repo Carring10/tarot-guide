@@ -170,21 +170,23 @@ function revealMeaning() {
       descriptions.appendChild(reading);
       reading.appendChild(text);
 
-      fadeCards();
+      fadeOutCards();
     })
   }
 }
 
-function fadeCards() {
-  setInterval(function () {
+function fadeOutCards() {
+  const intervalID = setInterval(function () {
     if (!container.style.opacity) {
       container.style.opacity = 1;
     }
 
     if (container.style.opacity > 0) {
-      container.style.opacity -= 0.1;
+      container.style.opacity -= 0.05;
+    } else {
+      clearInterval(intervalID);
     }
-  }, 300);
+  }, 200);
 }
 
 createCards();
