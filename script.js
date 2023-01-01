@@ -182,11 +182,25 @@ function fadeOutCards() {
     }
 
     if (container.style.opacity > 0) {
-      container.style.opacity -= 0.05;
+      container.style.opacity -= 0.01;
     } else {
       clearInterval(intervalID);
     }
-  }, 200);
+  }, 100)
+}
+
+function fadeInMeaning() {
+  const fadeInInterval = setInterval(function () {
+    if (!descriptions.style.opacity) {
+      container.style.opacity = 0;
+    }
+
+    if (descriptions.style.opacity < 1) {
+      descriptions.style.opacity += 0.05;
+    } else if (descriptions.style.opacity === 1) {
+      clearInterval(fadeInInterval);
+    }
+  }, 200)
 }
 
 createCards();
