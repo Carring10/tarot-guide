@@ -17,9 +17,9 @@ if (window.location.pathname == '/' | 'index.html') {
 
 const cardArray = [
   {
-    name: 'fool',
+    name: 'The Fool',
     img: 'images/major-arcana/the-fool.jpg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
+    description: 'Your path is about to change, let go of any baggage weighing you down and embrace opportunities with optimism. Free yourself of any worries and doubts, now is the time to be spontanious without a care.'
   },
   {
     name: 'magician',
@@ -139,14 +139,16 @@ function createCards() {
     const cardImg = document.createElement('img');
 
     cardImg.setAttribute('src', 'images/card-back.png');
+    cardImg.setAttribute('id', 'card-img');
     container.appendChild(cardImg);
     // reveal card
     cardImg.addEventListener('click', function () {
-      
+
       cardImg.setAttribute('src', cards[0].img);
       chosenCards.push(cards[0]);
       // remove the first card to prevent duplicates
       cards.shift();
+
       revealMeaning();
     }, { once: true })
   }
@@ -168,9 +170,21 @@ function revealMeaning() {
       descriptions.appendChild(reading);
       reading.appendChild(text);
 
-      console.log(card.description);
+      fadeCards();
     })
   }
+}
+
+function fadeCards() {
+  setInterval(function () {
+    if (!container.style.opacity) {
+      container.style.opacity = 1;
+    }
+
+    if (container.style.opacity > 0) {
+      container.style.opacity -= 0.1;
+    }
+  }, 300);
 }
 
 createCards();
