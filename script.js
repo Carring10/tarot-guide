@@ -131,7 +131,8 @@ const cardArray = [
 const container = document.querySelector('.container');
 const descriptions = document.querySelector('.descriptions');
 
-const cards = shuffleCards(cardArray);
+// spread array into a list of arguments to avoid "NaN" output
+const shuffledCards = [...cardArray].sort(() => 0.5 - Math.random());
 const chosenCards = [];
 
 function createCards() {
@@ -144,21 +145,14 @@ function createCards() {
     // reveal card
     cardImg.addEventListener('click', function () {
 
-      cardImg.setAttribute('src', cards[0].img);
-      chosenCards.push(cards[0]);
+      cardImg.setAttribute('src', shuffledCards[0].img);
+      chosenCards.push(shuffledCards[0]);
       // remove the first card to prevent duplicates
-      cards.shift();
+      shuffledCards.shift();
 
       revealMeaning();
     }, { once: true })
   }
-}
-
-function shuffleCards(arr) {
-  // spread array into a list of arguments to avoid "NaN" output
-  const shuffledCards = [...arr].sort(() => 0.5 - Math.random());
-
-  return shuffledCards;
 }
 
 function revealMeaning() {
@@ -186,24 +180,27 @@ function fadeOutCards() {
     } else {
       clearInterval(intervalID);
     }
+    console.log(intervalID)
   }, 100)
 }
 
 function fadeInMeaning() {
   const fadeInInterval = setInterval(function () {
     if (!descriptions.style.opacity) {
-      container.style.opacity = 0;
+      descriptions.style.opacity = 0;
     }
 
     if (descriptions.style.opacity < 1) {
-      descriptions.style.opacity += 0.05;
-    } else if (descriptions.style.opacity === 1) {
+      descriptions.style.opacity += 0.01;
+    } else {
       clearInterval(fadeInInterval);
     }
-  }, 200)
+    console.log(fadeInInterval)
+  }, 100)
 }
 
 createCards();
+
 
 
 
