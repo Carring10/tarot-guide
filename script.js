@@ -149,7 +149,6 @@ function createCards() {
       chosenCards.push(shuffledCards[0]);
       // remove the first card to prevent duplicates
       shuffledCards.shift();
-
       revealMeaning();
     }, { once: true })
   }
@@ -164,8 +163,8 @@ function revealMeaning() {
       descriptions.appendChild(reading);
       reading.appendChild(text);
 
-      fadeOutCards();
     })
+    fadeOutCards();
   }
 }
 
@@ -176,7 +175,7 @@ function fadeOutCards() {
     }
 
     if (container.style.opacity > 0) {
-      container.style.opacity -= 0.01;
+      container.style.opacity -= 0.05;
     } else {
       clearInterval(intervalID);
     }
@@ -200,6 +199,8 @@ function fadeInMeaning() {
 }
 
 createCards();
+
+
 
 
 
