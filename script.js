@@ -137,19 +137,20 @@ const chosenCards = [];
 
 function createCards() {
   for (let i = 0; i < 5; i++) {
-    const cardImg = document.createElement('img');
+    const card = document.createElement('img');
 
-    cardImg.setAttribute('src', 'images/card-back.png');
-    cardImg.setAttribute('id', 'card-img');
-    container.appendChild(cardImg);
-    cardImg.style.height = '400px';
+    card.setAttribute('src', 'images/card-back.png');
+    card.setAttribute('id', 'card-img');
+    container.appendChild(card);
+    card.style.height = '400px';
     // reveal card
-    cardImg.addEventListener('click', function () {
+    card.addEventListener('click', function () {
 
-      cardImg.setAttribute('src', shuffledCards[0].img);
+      card.setAttribute('src', shuffledCards[0].img);
       chosenCards.push(shuffledCards[0]);
       // remove the first card to prevent duplicates
       shuffledCards.shift();
+
       revealMeaning();
     }, { once: true })
   }
