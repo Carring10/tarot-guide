@@ -27,9 +27,9 @@ const cardArray = [
     description: "Don't underestimate your talents! You have the skills to accomplish your goals at this time, take advantage of your abilities and continue with confidence."
   },
   {
-    name: 'high priestess',
+    name: 'The High Priestess',
     img: 'images/major-arcana/the-high-priestess.jpg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
+    description: "Trust your instincts before anything else. No need to seek advice from any outside sources, because you already have the knowledge and wisdom within to guide yourself."
   },
   {
     name: 'empress',
