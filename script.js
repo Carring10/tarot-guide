@@ -142,6 +142,7 @@ function createCards() {
     cardImg.setAttribute('src', 'images/card-back.png');
     cardImg.setAttribute('id', 'card-img');
     container.appendChild(cardImg);
+    cardImg.style.height = '400px';
     // reveal card
     cardImg.addEventListener('click', function () {
 
@@ -156,6 +157,7 @@ function createCards() {
 
 function revealMeaning() {
   if (chosenCards.length === 5) {
+    console.log(chosenCards.length)
     chosenCards.forEach(card => {
       const reading = document.createElement('p');
       const text = document.createTextNode(card.description);
@@ -163,13 +165,15 @@ function revealMeaning() {
       descriptions.appendChild(reading);
       reading.appendChild(text);
 
+      descriptions.style.opacity = 0;
+
     })
     fadeOutCards();
   }
 }
 
 function fadeOutCards() {
-  const intervalID = setInterval(function () {
+  const fadeOutInterval = setInterval(function () {
     if (!container.style.opacity) {
       container.style.opacity = 1;
     }
@@ -177,9 +181,9 @@ function fadeOutCards() {
     if (container.style.opacity > 0) {
       container.style.opacity -= 0.05;
     } else {
-      clearInterval(intervalID);
+      clearInterval(fadeOutInterval);
     }
-    console.log(intervalID)
+    // console.log(container.style.opacity)
   }, 100)
 }
 
@@ -190,11 +194,11 @@ function fadeInMeaning() {
     }
 
     if (descriptions.style.opacity < 1) {
-      descriptions.style.opacity += 0.01;
+      descriptions.style.opacity += 0.05;
     } else {
       clearInterval(fadeInInterval);
     }
-    console.log(fadeInInterval)
+    console.log(descriptions.style.opacity)
   }, 100)
 }
 
