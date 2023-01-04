@@ -22,9 +22,9 @@ const cardArray = [
     description: 'Your path is about to change, let go of any baggage weighing you down and embrace opportunities with optimism. Free yourself of any worries and doubts, now is the time to be spontanious without a care.'
   },
   {
-    name: 'magician',
+    name: 'The Magician',
     img: 'images/major-arcana/the-magician.jpg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
+    description: "Don't underestimate your talents! You have the skills to accomplish your goals at this time, take advantage of your abilities and continue with confidence."
   },
   {
     name: 'high priestess',
@@ -158,18 +158,15 @@ function createCards() {
 
 function revealMeaning() {
   if (chosenCards.length === 5) {
-    console.log(chosenCards.length)
     chosenCards.forEach(card => {
-      const reading = document.createElement('p');
+      const p = document.createElement('p');
       const text = document.createTextNode(card.description);
 
-      descriptions.appendChild(reading);
-      reading.appendChild(text);
-
-      descriptions.style.opacity = 0;
-
+      descriptions.appendChild(p);
+      p.appendChild(text);
     })
     fadeOutCards();
+    fadeInMeaning();
   }
 }
 
@@ -184,7 +181,6 @@ function fadeOutCards() {
     } else {
       clearInterval(fadeOutInterval);
     }
-    // console.log(container.style.opacity)
   }, 100)
 }
 
