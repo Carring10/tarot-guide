@@ -19,7 +19,7 @@ const cardArray = [
   {
     name: 'The Fool',
     img: 'images/major-arcana/the-fool.jpg',
-    description: 'Your path is about to change, let go of any baggage weighing you down and embrace opportunities with optimism. Free yourself of any worries and doubts, now is the time to be spontanious without a care.'
+    description: 'It appears your path is about to change, let go of any baggage weighing you down and embrace opportunities with optimism. Free yourself of any worries and doubts, now is the time to be spontanious without a care.'
   },
   {
     name: 'The Magician',
@@ -29,22 +29,22 @@ const cardArray = [
   {
     name: 'The High Priestess',
     img: 'images/major-arcana/the-high-priestess.jpg',
-    description: "Trust your instincts before anything else. No need to seek advice from any outside sources, because you already have the knowledge and wisdom within to guide yourself."
+    description: "Trust your instincts before anything else. No need to seek advice from outside sources, you already have the knowledge and wisdom within to guide yourself."
   },
   {
-    name: 'empress',
+    name: 'The Empress',
     img: 'images/major-arcana/the-empress.jpg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
+    description: 'This is an indicator that you are entering a period of creativity. During this time, harness your inspiration to bring your ideas to fruition.'
   },
   {
-    name: 'emperor',
+    name: 'The Emperor',
     img: 'images/major-arcana/the-emperor.jpg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
+    description: 'Take this as a sign to work towards stability by practicing hard work and discipline to bring you closer to reaching your goals. You will benefit from consulting an authority figure in your life, either a parent or boss could act as a mentor.'
   },
   {
-    name: 'hierophant',
+    name: 'The Hierophant',
     img: 'images/major-arcana/the-hierophant.jpg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
+    description: 'If you are considering challenging the status quo, now is not the time to shake things up. Focus on tried and true methods for your future endeavors.'
   },
   {
     name: 'lovers',
