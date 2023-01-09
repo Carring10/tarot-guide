@@ -47,19 +47,19 @@ const cardArray = [
     description: 'If you are considering challenging the status quo, now is not the time to shake things up. Focus on tried and true methods for your future endeavors.'
   },
   {
-    name: 'lovers',
+    name: 'The Lovers',
     img: 'images/major-arcana/the-lovers.jpg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
+    description: 'Looks like you have love in the forecast. This can indicate a relationship, and though it is usually romantic in nature, it could be any sort of relationship where good communication is involved.'
   },
   {
-    name: 'chariot',
+    name: 'The Chariot',
     img: 'images/major-arcana/the-chariot.jpg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
+    description: 'It appears your current undertakings are progressing. Conquer the upcoming challenges with confidence, you got this.'
   },
   {
-    name: 'strength',
+    name: 'Strength',
     img: 'images/major-arcana/strength.jpg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
+    description: "No matter what you are facing right now, know that you have the power to transcend these obstacles. You are resilient, and your willpower will lead to positive results. You may be tested now but don't lose hope!"
   },
   {
     name: 'hermit',
