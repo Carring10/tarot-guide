@@ -159,14 +159,18 @@ function createCards() {
 function revealMeaning() {
   if (chosenCards.length === 5) {
     chosenCards.forEach(card => {
+      const img = document.createElement('img');
       const p = document.createElement('p');
       const text = document.createTextNode(card.description);
 
+      img.setAttribute('src', card.img);
+      img.style.height = '400px';
+      descriptions.appendChild(img);
       descriptions.appendChild(p);
       p.appendChild(text);
     })
     fadeOutCards();
-    fadeInMeaning();
+    // fadeInMeaning();
   }
 }
 
