@@ -174,29 +174,31 @@ const cardArray = [
 
 const container = document.querySelector('.container');
 const descriptions = document.querySelector('.descriptions');
-const flipCard = document.querySelector('.flip-card');
-
 
 // spread array into a list of arguments to avoid "NaN" output
 const shuffledCards = [...cardArray].sort(() => 0.5 - Math.random());
 const chosenCards = [];
 
 function createCards() {
-  for (let i = 0; i < 3; i++) {
-    const card = document.createElement('img');
+  for (let i = 0; i < shuffledCards.length; i++) {
+    const card = document.createElement('div');
+    const back = document.createElement('img');
 
-    card.setAttribute('src', 'images/card-back.png');
+    card.setAttribute('class', 'card');
+    back.setAttribute('class', 'back');
+    back.setAttribute('src', 'images/card-back.png');
+
     container.appendChild(card);
-    card.style.height = '400px';
+    card.appendChild(back);
+    back.style.height = '380px';
     // reveal card
     card.addEventListener('click', function () {
-
-      card.setAttribute('src', shuffledCards[0].img);
+      back.setAttribute('src', shuffledCards[0].img);
       chosenCards.push(shuffledCards[0]);
       // remove the first card to prevent duplicates
       shuffledCards.shift();
 
-      revealMeaning();
+      // revealMeaning();
     }, { once: true })
   }
 }
@@ -209,8 +211,9 @@ function revealMeaning() {
 
       img.setAttribute('src', chosenCards[i].img);
       img.setAttribute('id', i);
-      img.style.height = '400px';
+
       descriptions.appendChild(img);
+      img.style.height = '400px';
 
       if (img.id == 0) {
         const text = document.createTextNode(chosenCards[i].situation);
