@@ -194,8 +194,11 @@ function createCards() {
     // reveal card
     card.addEventListener('click', function () {
       // back.setAttribute('src', shuffledCards[0].img);
-      back.classList.toggle('selected');
       chosenCards.push(shuffledCards[0]);
+      // so it appears the user cannot select more than 3 cards at a time
+      if (chosenCards.length < 4) {
+        back.classList.toggle('selected');
+      }
       console.log(chosenCards)
       // remove the first card to prevent duplicates
       shuffledCards.shift();
