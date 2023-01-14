@@ -174,6 +174,8 @@ const cardArray = [
 
 const container = document.querySelector('.container');
 const descriptions = document.querySelector('.descriptions');
+const flipCard = document.querySelector('.flip-card');
+
 
 // spread array into a list of arguments to avoid "NaN" output
 const shuffledCards = [...cardArray].sort(() => 0.5 - Math.random());
@@ -204,23 +206,22 @@ function revealMeaning() {
     for (let i = 0; i < chosenCards.length; i++) {
       const img = document.createElement('img');
       const p = document.createElement('p');
-      const text = document.createTextNode(chosenCards.description);
-      
+
       img.setAttribute('src', chosenCards[i].img);
       img.setAttribute('id', i);
       img.style.height = '400px';
       descriptions.appendChild(img);
-      
+
       if (img.id == 0) {
         const text = document.createTextNode(chosenCards[i].situation);
         descriptions.appendChild(p);
         p.appendChild(text);
       } else if (img.id == 1) {
-        const text = document.createTextNode(chosenCards[i].advice);
+        const text = document.createTextNode(chosenCards[i].obstacle);
         descriptions.appendChild(p);
         p.appendChild(text);
       } else {
-        const text = document.createTextNode(chosenCards[i].obstacle);
+        const text = document.createTextNode(chosenCards[i].advice);
         descriptions.appendChild(p);
         p.appendChild(text);
       }
