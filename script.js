@@ -193,12 +193,14 @@ function createCards() {
     back.style.height = '380px';
     // reveal card
     card.addEventListener('click', function () {
-      back.setAttribute('src', shuffledCards[0].img);
+      // back.setAttribute('src', shuffledCards[0].img);
+      back.classList.toggle('selected');
       chosenCards.push(shuffledCards[0]);
+      console.log(chosenCards)
       // remove the first card to prevent duplicates
       shuffledCards.shift();
 
-      // revealMeaning();
+      revealMeaning();
     }, { once: true })
   }
 }

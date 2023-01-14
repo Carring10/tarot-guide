@@ -17,8 +17,13 @@ body {
 
 .card {
   position: relative;
+  cursor: pointer;
 }
 
 .back {
   position: absolute;
+}
+
+.back.selected {
+  border: 2px solid green;
 }
