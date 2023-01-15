@@ -27,3 +27,8 @@ body {
 .back.selected {
   border: 2px solid green;
 }
+
+.descriptions {
+  opacity: 0;
+  transition: opacity 3s;
+}

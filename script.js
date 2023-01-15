@@ -235,7 +235,9 @@ function revealMeaning() {
       }
     }
     fadeOutCards();
-    // fadeInMeaning();
+    setTimeout(() => {
+      fadeInMeaning();
+    }, 2000)
   }
 }
 
@@ -250,22 +252,11 @@ function fadeOutCards() {
     } else {
       clearInterval(fadeOutInterval);
     }
-  }, 100)
+  }, 80)
 }
 
 function fadeInMeaning() {
-  const fadeInInterval = setInterval(function () {
-    if (!descriptions.style.opacity) {
-      descriptions.style.opacity = 0;
-    }
-
-    if (descriptions.style.opacity < 1) {
-      descriptions.style.opacity += 0.05;
-    } else {
-      clearInterval(fadeInInterval);
-    }
-    console.log(descriptions.style.opacity)
-  }, 100)
+descriptions.style.opacity = 1;
 }
 
 createCards();
