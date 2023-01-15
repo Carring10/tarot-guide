@@ -208,26 +208,29 @@ function createCards() {
 function revealReading() {
   if (chosenCards.length === 3) {
     for (let i = 0; i < chosenCards.length; i++) {
+      const content = document.createElement('div');
       const img = document.createElement('img');
       const p = document.createElement('p');
 
+      content.setAttribute('class', 'content');
       img.setAttribute('src', chosenCards[i].img);
       img.setAttribute('id', i);
 
-      reading.appendChild(img);
+      reading.appendChild(content);
+      content.appendChild(img);
       img.setAttribute('class', 'front');
 
       if (img.id == 0) {
         const text = document.createTextNode(chosenCards[i].situation);
-        reading.appendChild(p);
+        content.appendChild(p);
         p.appendChild(text);
       } else if (img.id == 1) {
         const text = document.createTextNode(chosenCards[i].obstacle);
-        reading.appendChild(p);
+        content.appendChild(p);
         p.appendChild(text);
       } else {
         const text = document.createTextNode(chosenCards[i].advice);
-        reading.appendChild(p);
+        content.appendChild(p);
         p.appendChild(text);
       }
     }
@@ -236,7 +239,7 @@ function revealReading() {
     // fade in reading
     setTimeout(() => {
       const header = document.getElementById('header');
-      
+
       reading.style.opacity = 1;
       header.textContent = "Your Reading Foretells...";
     }, 1500)

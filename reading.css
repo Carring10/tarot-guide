@@ -7,18 +7,21 @@
 body {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 header {
   text-align: center;
-  /* transition: opacity 3s; */
+  margin: 30px;
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 70px;
-  margin: 20px;
+  height: 640px;
+  margin-right: 200px;
 }
 
 .card {
@@ -29,6 +32,8 @@ header {
 .back {
   position: absolute;
   height: 380px;
+  border: 1px solid black;
+  border-radius: 3%;
 }
 
 .back.selected {
@@ -38,6 +43,14 @@ header {
 .reading {
   opacity: 0;
   transition: opacity 3s;
+  cursor: auto;
+  z-index: 1;
+  padding-left: 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
 }
 
 .front {
