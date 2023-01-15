@@ -9,10 +9,11 @@ body {
   flex-direction: column;
 }
 
-.container {
+.cards {
   display: flex;
   flex-wrap: wrap;
   gap: 70px;
+  margin: 20px;
 }
 
 .card {
@@ -29,7 +30,7 @@ body {
   border: 2px solid green;
 }
 
-.descriptions {
+.reading {
   opacity: 0;
   transition: opacity 3s;
 }

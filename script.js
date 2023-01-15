@@ -172,8 +172,8 @@ const cardArray = [
   }
 ]
 
-const container = document.querySelector('.container');
-const descriptions = document.querySelector('.descriptions');
+const cards = document.querySelector('.cards');
+const reading = document.querySelector('.reading');
 
 // spread array into a list of arguments to avoid "NaN" output
 const shuffledCards = [...cardArray].sort(() => 0.5 - Math.random());
@@ -188,7 +188,7 @@ function createCards() {
     back.setAttribute('class', 'back');
     back.setAttribute('src', 'images/card-back.png');
 
-    container.appendChild(card);
+    cards.appendChild(card);
     card.appendChild(back);
     // reveal card
     card.addEventListener('click', function () {
@@ -214,20 +214,20 @@ function revealReading() {
       img.setAttribute('src', chosenCards[i].img);
       img.setAttribute('id', i);
 
-      descriptions.appendChild(img);
+      reading.appendChild(img);
       img.setAttribute('class', 'front');
 
       if (img.id == 0) {
         const text = document.createTextNode(chosenCards[i].situation);
-        descriptions.appendChild(p);
+        reading.appendChild(p);
         p.appendChild(text);
       } else if (img.id == 1) {
         const text = document.createTextNode(chosenCards[i].obstacle);
-        descriptions.appendChild(p);
+        reading.appendChild(p);
         p.appendChild(text);
       } else {
         const text = document.createTextNode(chosenCards[i].advice);
-        descriptions.appendChild(p);
+        reading.appendChild(p);
         p.appendChild(text);
       }
     }
@@ -235,19 +235,19 @@ function revealReading() {
     fadeOutCards();
     // fade in reading
     setTimeout(() => {
-      descriptions.style.opacity = 1;
+      reading.style.opacity = 1;
     }, 1500)
   }
 }
 
 function fadeOutCards() {
   const fadeOutInterval = setInterval(function () {
-    if (!container.style.opacity) {
-      container.style.opacity = 1;
+    if (!cards.style.opacity) {
+      cards.style.opacity = 1;
     }
 
-    if (container.style.opacity > 0) {
-      container.style.opacity -= 0.05;
+    if (cards.style.opacity > 0) {
+      cards.style.opacity -= 0.05;
     } else {
       clearInterval(fadeOutInterval);
     }
