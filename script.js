@@ -235,7 +235,10 @@ function revealReading() {
     fadeOutCards();
     // fade in reading
     setTimeout(() => {
+      const header = document.getElementById('header');
+      
       reading.style.opacity = 1;
+      header.textContent = "Your Reading Foretells...";
     }, 1500)
   }
 }

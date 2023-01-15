@@ -9,6 +9,11 @@ body {
   flex-direction: column;
 }
 
+header {
+  text-align: center;
+  /* transition: opacity 3s; */
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
