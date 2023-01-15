@@ -190,25 +190,22 @@ function createCards() {
 
     container.appendChild(card);
     card.appendChild(back);
-    back.style.height = '380px';
     // reveal card
     card.addEventListener('click', function () {
-      // back.setAttribute('src', shuffledCards[0].img);
       chosenCards.push(shuffledCards[0]);
       // so it appears the user cannot select more than 3 cards at a time
       if (chosenCards.length < 4) {
         back.classList.toggle('selected');
       }
-      console.log(chosenCards)
       // remove the first card to prevent duplicates
       shuffledCards.shift();
 
-      revealMeaning();
+      revealReading();
     }, { once: true })
   }
 }
 
-function revealMeaning() {
+function revealReading() {
   if (chosenCards.length === 3) {
     for (let i = 0; i < chosenCards.length; i++) {
       const img = document.createElement('img');
@@ -218,7 +215,7 @@ function revealMeaning() {
       img.setAttribute('id', i);
 
       descriptions.appendChild(img);
-      img.style.height = '400px';
+      img.setAttribute('class', 'front');
 
       if (img.id == 0) {
         const text = document.createTextNode(chosenCards[i].situation);
@@ -234,10 +231,12 @@ function revealMeaning() {
         p.appendChild(text);
       }
     }
+
     fadeOutCards();
+    // fade in reading
     setTimeout(() => {
-      fadeInMeaning();
-    }, 2000)
+      descriptions.style.opacity = 1;
+    }, 1500)
   }
 }
 
@@ -253,10 +252,6 @@ function fadeOutCards() {
       clearInterval(fadeOutInterval);
     }
   }, 80)
-}
-
-function fadeInMeaning() {
-descriptions.style.opacity = 1;
 }
 
 createCards();

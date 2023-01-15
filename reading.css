@@ -22,6 +22,7 @@ body {
 
 .back {
   position: absolute;
+  height: 380px;
 }
 
 .back.selected {
@@ -31,4 +32,8 @@ body {
 .descriptions {
   opacity: 0;
   transition: opacity 3s;
+}
+
+.front {
+  height: 400px;
 }
