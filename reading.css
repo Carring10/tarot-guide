@@ -12,7 +12,7 @@ body {
 
 header {
   text-align: center;
-  margin: 30px;
+  margin: 50px;
 }
 
 .cards {
@@ -20,7 +20,6 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 70px;
-  height: 640px;
   margin-right: 200px;
 }
 
@@ -54,5 +53,5 @@ header {
 }
 
 .front {
-  height: 400px;
+  height: 250px;
 }
