@@ -26,6 +26,11 @@ header {
 .card {
   position: relative;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: translate(0, -15px);
 }
 
 .back {
@@ -33,10 +38,15 @@ header {
   height: 380px;
   border: 1px solid black;
   border-radius: 3%;
+  transition: 0.5s;
+}
+
+.back:hover {
+  box-shadow: rgba(245, 200, 54, 0.35) 0px 5px 40px;
 }
 
 .back.selected {
-  border: 2px solid green;
+  box-shadow: rgba(245, 200, 54, 0.35) 0px 5px 40px;
 }
 
 .reading {
