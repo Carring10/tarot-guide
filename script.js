@@ -1,4 +1,5 @@
-if (window.location.pathname == '/' | 'index.html') {
+
+if (window.location.pathname == '/index.html') {
   const navbar = document.getElementById('navbar');
   const sticky = navbar.offsetTop;
 
@@ -190,7 +191,7 @@ function createCards() {
 
     cards.appendChild(card);
     card.appendChild(back);
-    // reveal card
+
     card.addEventListener('click', function () {
       chosenCards.push(shuffledCards[0]);
       // so it appears the user cannot select more than 3 cards at a time
@@ -260,7 +261,10 @@ function fadeOutCards() {
   }, 80)
 }
 
-createCards();
+// to prevent errors on homepage
+if (window.location.pathname == '/reading.html') {
+  createCards();
+}
 
 
 
