@@ -1,28 +1,10 @@
-
-if (window.location.pathname == '/index.html') {
-  const navbar = document.getElementById('navbar');
-  const sticky = navbar.offsetTop;
-
-  function addStickyClass() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add('sticky')
-    } else {
-      navbar.classList.remove('sticky');
-    }
-  }
-
-  window.onscroll = function () {
-    addStickyClass()
-  };
-}
-
 const cardArray = [
   {
     name: 'The Fool',
     img: 'images/major-arcana/the-fool.jpg',
-    situation: 'It appears your path is about to change, let go of any baggage weighing you down and embrace opportunities with optimism. Free yourself of any worries and doubts, now is the time to be spontanious without a care.',
-    obstacle: "obstable reading",
-    advice: "advice reading"
+    situation: "New beginnings are on their way, if you've been looking to start a new career path, form a new relationship, or learn a skill - what ever it may be, The Fool is a welcome sign to to start your journey.",
+    obstacle: "In attempts to be a spontaneous and care-free spirit, you may be disregarding the potential risks. You will need to find a balance of living in the moment and being considerate of the consequences, always involve a plan B in your endevors.",
+    advice: "On your journey of navigating life, whether it be new opportunities or unexpected tribulations, The Fool is there to remind you that you can never really predict what lies ahead - therefore approach each day as a new adventure. Don't be troubled by the unknown, greet it with a sense of innocence and curiosity."
   },
   {
     name: 'The Magician',
@@ -264,6 +246,23 @@ function fadeOutCards() {
 // to prevent errors on homepage
 if (window.location.pathname == '/reading.html') {
   createCards();
+}
+
+if (window.location.pathname == '/index.html') {
+  const navbar = document.getElementById('navbar');
+  const sticky = navbar.offsetTop;
+
+  function addStickyClass() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add('sticky')
+    } else {
+      navbar.classList.remove('sticky');
+    }
+  }
+
+  window.onscroll = function () {
+    addStickyClass()
+  };
 }
 
 
