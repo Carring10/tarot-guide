@@ -19,7 +19,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 70px;
+  gap: 75px;
   margin-right: 200px;
 }
 
@@ -47,19 +47,22 @@ header {
 
 .back.selected {
   box-shadow: rgba(245, 200, 54, 0.35) 0px 5px 40px;
+  transform: translate(0, -25px);
 }
 
 .reading {
   opacity: 0;
   transition: opacity 3s;
   cursor: auto;
-  z-index: 1;
+  z-index: 2;
   padding-left: 50px;
 }
 
 .content {
   display: flex;
   flex-direction: row;
+  gap: 25px;
+  margin: 25px;
 }
 
 .front {
