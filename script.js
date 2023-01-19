@@ -193,6 +193,7 @@ function revealReading() {
     for (let i = 0; i < chosenCards.length; i++) {
       const content = document.createElement('div');
       const img = document.createElement('img');
+      const h2 = document.createElement('h2');
       const p = document.createElement('p');
 
       content.setAttribute('class', 'content');
@@ -203,18 +204,28 @@ function revealReading() {
       content.appendChild(img);
       img.setAttribute('class', 'front');
 
+      function appendElements(description, text) {
+        content.appendChild(h2);
+        h2.appendChild(description);
+        content.appendChild(p);
+        p.appendChild(text);
+      }
+
       if (img.id == 0) {
+        const description = document.createTextNode('Situation');
         const text = document.createTextNode(chosenCards[i].situation);
-        content.appendChild(p);
-        p.appendChild(text);
+
+        appendElements(description, text);
       } else if (img.id == 1) {
+        const description = document.createTextNode('Obstacle');
         const text = document.createTextNode(chosenCards[i].obstacle);
-        content.appendChild(p);
-        p.appendChild(text);
+
+        appendElements(description, text);
       } else {
+        const description = document.createTextNode('Advice');
         const text = document.createTextNode(chosenCards[i].advice);
-        content.appendChild(p);
-        p.appendChild(text);
+
+        appendElements(description, text);
       }
     }
 
