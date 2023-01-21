@@ -192,40 +192,43 @@ function revealReading() {
   if (chosenCards.length === 3) {
     for (let i = 0; i < chosenCards.length; i++) {
       const content = document.createElement('div');
+      const description = document.createElement('div');
       const img = document.createElement('img');
       const h2 = document.createElement('h2');
       const p = document.createElement('p');
 
       content.setAttribute('class', 'content');
+      description.setAttribute('class', 'description');
       img.setAttribute('src', chosenCards[i].img);
       img.setAttribute('id', i);
+      img.setAttribute('class', 'front');
 
       reading.appendChild(content);
       content.appendChild(img);
-      img.setAttribute('class', 'front');
+      content.appendChild(description);
 
-      function appendElements(description, text) {
-        content.appendChild(h2);
-        h2.appendChild(description);
-        content.appendChild(p);
+      function appendElements(category, text) {
+        description.appendChild(h2);
+        description.appendChild(p);
+        h2.appendChild(category);
         p.appendChild(text);
       }
 
       if (img.id == 0) {
-        const description = document.createTextNode('Situation');
+        const category = document.createTextNode('Situation');
         const text = document.createTextNode(chosenCards[i].situation);
 
-        appendElements(description, text);
+        appendElements(category, text);
       } else if (img.id == 1) {
-        const description = document.createTextNode('Obstacle');
+        const category = document.createTextNode('Obstacle');
         const text = document.createTextNode(chosenCards[i].obstacle);
 
-        appendElements(description, text);
+        appendElements(category, text);
       } else {
-        const description = document.createTextNode('Advice');
+        const category = document.createTextNode('Advice');
         const text = document.createTextNode(chosenCards[i].advice);
 
-        appendElements(description, text);
+        appendElements(category, text);
       }
     }
 
