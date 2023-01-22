@@ -3,27 +3,27 @@ const cardArray = [
     name: 'The Fool',
     img: 'images/major-arcana/the-fool.jpg',
     situation: "New beginnings are on their way, if you've been looking to start a new career path, form a new relationship, or learn a skill - what ever it may be, The Fool is a welcome sign to to start your journey.",
-    obstacle: "In attempts to be a spontaneous and care-free spirit, you may be disregarding the potential risks. You will need to find a balance of living in the moment and being considerate of the consequences, always involve a plan B in your endeavors.",
+    obstacle: "Keep in mind, in attempts to be a spontaneous and care-free spirit, you may be disregarding the potential risks. You will need to find a balance of living in the moment and being considerate of the consequences, always involve a plan B in your endeavors.",
     advice: "On your journey of navigating life, whether it be new opportunities or unexpected tribulations, The Fool is there to remind you that you can never really predict what lies ahead - therefore approach each day as a new adventure. Don't be troubled by the unknown, greet it with a sense of innocence and curiosity."
   },
   {
     name: 'The Magician',
     img: 'images/major-arcana/the-magician.jpg',
     situation: "There are opportunities in your midst, and you are likely to find success as The Magician is a sign that you are as ready as you will ever be.",
-    obstacle: "You have the desire and commitment to pursue whatever it is you want, but your lack of confidence in your abilities is holding you back, your hesitation could lead to missed opportunities.",
-    advice: "You can trust your abilities. Without confidence in your potential, you will become a victim to indecision. You can harness the opportunities ahead if you take action."
+    obstacle: "It is true that you have the desire and commitment to pursue whatever it is you want, but your lack of confidence in your abilities is holding you back, your hesitation could lead to missed opportunities.",
+    advice: "Regardless, whatever you set out to do, you can trust your abilities. Without confidence in your potential, you will become a victim to indecision. You can harness the opportunities ahead if you take action."
   },
   {
     name: 'The High Priestess',
     img: 'images/major-arcana/the-high-priestess.jpg',
-    situation: "Trust your instincts before anything else. No need to seek advice from outside sources, you already have the knowledge and wisdom within to guide yourself.",
-    obstacle: "obstable reading",
-    advice: "advice reading"
+    situation: "The High Priestess represents wisdom attained through study. During this time, you may be in a period of isolation in order to understand your needs for future goals.",
+    obstacle: "However, you have outside sources swaying your beliefs. It could be other's opinions or you find yourself getting swept up in drama.",
+    advice: "In order to combat this, The High Priestess suggests that you rely on your intuition to guide you. You can do this by embracing a pause from the outside world, isolate yourself from other's opinions and avoid getting swept up in drama. Be attentative to your own needs and desires."
   },
   {
     name: 'The Empress',
     img: 'images/major-arcana/the-empress.jpg',
-    situation: 'This is an indicator that you are entering a period of creativity. During this time, harness your inspiration to bring your ideas to fruition.',
+    situation: "The Empress is an indicator that you are entering a period of creativity. During this time, you have an abundance of new ideas, harness your inspiration to bring them to fruition.",
     obstacle: "obstable reading",
     advice: "advice reading"
   },
