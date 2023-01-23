@@ -24,29 +24,29 @@ const cardArray = [
     name: 'The Empress',
     img: 'images/major-arcana/the-empress.jpg',
     situation: "The Empress is an indicator that you are entering a period of creativity. During this time, you have an abundance of new ideas, harness your inspiration to bring them to fruition.",
-    obstacle: "obstable reading",
-    advice: "advice reading"
+    obstacle: "The obstacle that is holding you back the most is a creative block. You may be feeling uninspired to come up with fresh ideas, or you are feeling unmotivated to carry out these ideas because they do not excite you.",
+    advice: "It would help to take some time and experience something new to reignite your inspiration. You can achieve this by focusing on things that get your creative energy flowing, such as an art project. Or maybe you're caught up in the monotony of life, try new things such as learning a new hobby or visiting a place you've never been to before."
   },
   {
     name: 'The Emperor',
     img: 'images/major-arcana/the-emperor.jpg',
-    situation: 'Take this as a sign to work towards stability by practicing hard work and discipline to bring you closer to reaching your goals. You will benefit from consulting an authority figure in your life, either a parent or boss could act as a mentor.',
-    obstacle: "obstable reading",
-    advice: "advice reading"
+    situation: "The Emperor suggests that you are stepping into a leadership role. It could be taking the lead on a project at work, or you may be known as the 'rock' for a friend or family who rely on your stability and security.",
+    obstacle: "The Emperor can be domineering and rigid in his thinking. The card can suggest an over-use and abuse of authoritative power surrounding you. It could originate from you or from another person, often a boss, partner or father figure.",
+    advice: "Take this as a sign to work towards stability by practicing hard work and discipline to bring you closer to reaching your goals. You will benefit from consulting an authority figure in your life, either a parent or boss could act as a mentor."
   },
   {
     name: 'The Hierophant',
     img: 'images/major-arcana/the-hierophant.jpg',
-    situation: 'If you are considering challenging the status quo, now is not the time to shake things up. Focus on tried and true methods for your future endeavors.',
-    obstacle: "obstable reading",
-    advice: "advice reading"
+    situation: "The Hierophant's arrival suggests you are following convention and staying within the bounds of a ‘tried and tested’ model. You are not yet willing to go out on a limb or offer any new and innovative ideas. Instead, you adhere to the key principles and rules that you know will lead to a successful result.",
+    obstacle: "You may be in a situation that is pushing you to step out of your comfort zone and challenge the status quo. Whether by choice or not, you may be struggling to be independant, and it may be unsettling at first as you discover your own way.",
+    advice: "The Hierophant reminds you that you are your own teacher. All the wisdom you seek comes from within – not from some external source or power. You are being guided to follow your own path and adopt your own spiritual belief systems rather than blindly following others."
   },
   {
     name: 'The Lovers',
     img: 'images/major-arcana/the-lovers.jpg',
-    situation: 'Looks like you have love in the forecast. This can indicate a relationship, and though it is usually romantic in nature, it could be any sort of relationship where good communication is involved.',
-    obstacle: "obstable reading",
-    advice: "advice reading"
+    situation: "Looks like you have love in the forecast. This can indicate a relationship, and though it is usually romantic in nature, it could be any sort of meaningful relationship where good chemistry is involved. The Lovers can also represent choice, the choice about who you want to be in this lifetime, how you connect with others and on what level, and about what you will and won’t stand for.",
+    obstacle: "However, strained relationships are clouding your conscious. You're out of sync with those around you, you may find your relationships are strained and communication is challenging. ",
+    advice: "To overcome this, this card is a sign that honesty with yourself and others will help you to become clear about your personal values and beliefs. Staying true to yourself will help you make decisions that are authentic to you and your philosophy."
   },
   {
     name: 'The Chariot',
