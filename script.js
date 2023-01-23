@@ -31,7 +31,7 @@ const cardArray = [
     name: 'The Emperor',
     img: 'images/major-arcana/the-emperor.jpg',
     situation: "The Emperor suggests that you are stepping into a leadership role. It could be taking the lead on a project at work, or you may be known as the 'rock' for a friend or family who rely on your stability and security.",
-    obstacle: "The Emperor can be domineering and rigid in his thinking. The card can suggest an over-use and abuse of authoritative power surrounding you. It could originate from you or from another person, often a boss, partner or father figure.",
+    obstacle: "You are being held back by someone domineering and rigid in their thinking. The card can suggest an over-use and abuse of authoritative power surrounding you. It could originate from you or from another person, often a boss, partner or father figure.",
     advice: "Take this as a sign to work towards stability by practicing hard work and discipline to bring you closer to reaching your goals. You will benefit from consulting an authority figure in your life, either a parent or boss could act as a mentor."
   },
   {
@@ -51,30 +51,30 @@ const cardArray = [
   {
     name: 'The Chariot',
     img: 'images/major-arcana/the-chariot.jpg',
-    situation: 'It appears your current undertakings are progressing. Conquer the upcoming challenges with confidence, you got this.',
-    obstacle: "obstable reading",
-    advice: "advice reading"
+    situation: "The Chariot represents determination. You have been firm in your decisions and you can see your dedication lead to progress. This card is a sign of encouragement that when you have set your objectives, you are capable with seeing them through.",
+    obstacle: "At times, The Chariot is a warning that you are letting obstacles and challenges get in the way, preventing you from achieving what you set out to do. It’s all getting too hard, and you feel like you don’t have the will to go on.",
+    advice: "The Chariot calls you to assert yourself and be courageous. Be bold in expressing your desires and laying down your boundaries; otherwise, you will not get your way. You need to have faith in yourself and know fundamentally who you are and what you stand for."
   },
   {
     name: 'Strength',
     img: 'images/major-arcana/strength.jpg',
-    situation: "No matter what you are facing right now, know that you have the power to transcend these obstacles. You are resilient, and your willpower will lead to positive results. You may be tested now but don't lose hope!",
-    obstacle: "obstable reading",
-    advice: "advice reading"
+    situation: "Strength shows that you have great stamina and persistence, balanced with underlying patience and inner calm. You are committed to what you need to do, and you go about it in a way that shows your composure and maturity.",
+    obstacle: "If you have recently experienced a setback, you may be vulnerable and lacking in self-confidence. This is making it difficult for you to be confident in your endeavors.",
+    advice: "No matter what you are facing right now, know that you have the power to transcend these obstacles. You are resilient, and your willpower will lead to positive results. You may be tested now but don't lose hope!"
   },
   {
-    name: 'hermit',
+    name: 'The Hermit',
     img: 'images/major-arcana/the-hermit.jpg',
-    situation: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-    obstacle: "obstable reading",
-    advice: "advice reading"
+    situation: "The Hermit shows that you are taking a break from everyday life to draw your energy and attention inward and find the answers you seek, deep within your soul. You realize that your most profound sense of truth and knowledge is within yourself and not in the distractions of the outside world.",
+    obstacle: "You have recently been taking too much time for yourself, while alone time is essential, you may be using this to ruminate on the past and become too absorbed into your personal dilemmas that you feel shut out, and struggling to reamerge with a more positive mindset.",
+    advice: "The Hermit often appears when you are at a pivotal point in your life and considering a new direction. Through meditation, contemplation, and self-examination, you may begin to re-evaluate your personal goals and change your overall course. You will look at your life with a deeper, more spiritual understanding and a few of your priorities will change as a result."
   },
   {
-    name: 'wheel of fortune',
+    name: 'The Wheel of Fortune',
     img: 'images/major-arcana/wheel-of-fortune.jpg',
-    situation: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-    obstacle: "obstable reading",
-    advice: "advice reading"
+    situation: "The Wheel of Fortune can show a critical turning point in your life. Opportunities you could never imagine are suddenly available to you, and you have the chance to make a significant change in your life. While it may be unexpected and unfamiliar, see this as an invitation to turn things around and take an entirely new direction in your life.",
+    obstacle: "Holding you back is your resistance to change. This card suggests that change has become a source of significant stress, and you may be trying to consciously or subconsciously stop events from running their course.",
+    advice: "To make the most of the situation, The Wheel of Fortune is here to remind you that life is in a constant state of change.  If you’re going through a difficult time rest assured that it will get better from here. Good luck and good fortune will make their return in time. Similarly, if things are going well, know this, too, will change and life may return to ‘normal’ soon. This cycle shows why it is so important to cherish the blissful moments in your."
   },
   {
     name: 'justice',
