@@ -112,46 +112,46 @@ const cardArray = [
     advice: "The Devil Reversed calls on you to confront your inner fears and anxieties to free yourself from the chains that bind you to your limiting beliefs and unhealthy attachments. Eliminate those things you know are harmful to you and your inner psyche. It may be about creating a healthier diet, watching less television, quitting smoking, spending more time with your loved ones, or focusing more on your goals."
   },
   {
-    name: 'Tower',
+    name: 'The Tower',
     img: 'images/major-arcana/the-tower.jpg',
     situation: "When The Tower card appears in a Tarot reading, expect the unexpected – massive change, upheaval, destruction and chaos. It may be a divorce, death of a loved one, financial failure, health problems, natural disaster, job loss or any event that shakes you to your core, affecting you spiritually, mentally and physically. There’s no escaping it. Change is here to tear things up, create chaos and destroy everything in its path.",
     obstacle: "However, you are feeling pain and turmoil that has come from a significant change in your life.",
     advice: "Keep in mind, every challenge that you overcome will allow growth. You will grow stronger, wiser, and more resilient as you develop a new perspective on life."
   },
   {
-    name: 'star',
+    name: 'The Star',
     img: 'images/major-arcana/the-star.jpg',
-    situation: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-    obstacle: "obstable reading",
-    advice: "advice reading"
+    situation: "If you have recently experienced an unfortunate situation, The Star signals a time of reprieve after this challenge. You are entering a peaceful phase in your life, you can expect mental stability and a more in-depth understanding of both yourself and others around you. This is a time of significant personal growth and development.",
+    obstacle: "Despite that, you are starting to feel disengaged and uninspired with life or components of your life, for example, work, hobbies, relationships, or personal projects. Perhaps you started out with great vision and enthusiasm, but you are now finding yourself overwhelmed by day-to-day routines that are boring and dreary.",
+    advice: "You may also want to find or rediscover a sense of meaning, inspiration, or purpose in your life. You are making some significant changes in your life, transforming yourself from the old you to the new you and, in doing so, you are bringing about a fresh perspective. Strip back any limiting beliefs, facades, or deceptions, and live in your authentic nature. Be open to new ideas and growth, and listen to the still voice within."
   },
   {
-    name: 'moon',
+    name: 'The Moon',
     img: 'images/major-arcana/the-moon.jpg',
-    situation: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-    obstacle: "obstable reading",
-    advice: "advice reading"
+    situation: "The Moon can indicate a time of uncertainty and illusion, when nothing is what it seems. Be careful of making fast decisions when The Moon appears because you may later realize you only had half the information you needed.",
+    obstacle: "Though, you have been dealing with fears and anxiety. You may try to bury these feelings even deeper within your subconscious so you can avoid them. You may not be ready to face your emotions, pushing them to the side and pretending as if nothing is wrong. This strategy might work in the short-term, but eventually, you will need to resurface these emotions and deal with them head-on.",
+    advice: "To combat this, you need to be aware of the situations that are causing fear and anxiety in your mind, whether it is now or in the future. It alerts you not to allow inner disturbances and self-deception to take the best of you. These deep memories and fears must be let go, and the negative energies must be released and turned into something constructive."
   },
   {
-    name: 'sun',
+    name: 'The Sun',
     img: 'images/major-arcana/the-sun.jpg',
-    situation: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-    obstacle: "obstable reading",
-    advice: "advice reading"
+    situation: "The Sun represents success, radiance and abundance. The Sun gives you strength and tells you that no matter where you go or what you do, your positive and radiant energy will follow you and bring you happiness and joy. You are also in a position where you can share your highest qualities and achievements with others.",
+    obstacle: "But, you are struggling to see the bright side of life. You may have experienced setbacks that damaged your enthusiasm and optimism and perhaps led you to question whether you can achieve what you set out to do. You may feel depressed or left out and are no longer enjoying what you are doing. Your direction and path ahead may appear clouded or distorted.",
+    advice: "No matter what you are going through, The Sun brings the message that things will get better, and through your challenges, you have discovered who you are and why you're here. Knowing setbacks are temporary will get you through your hardships."
   },
   {
-    name: 'judgement',
+    name: 'Judgement',
     img: 'images/major-arcana/judgement.jpg',
-    situation: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-    obstacle: "obstable reading",
-    advice: "advice reading"
+    situation: "The Judgement card often indicates that you need to make a life-changing decision. You may be at a crossroads, aware that any choice you make will bring a significant change with long-lasting effects.",
+    obstacle: "Although, Judgement indicates that your inner critic is monopolizing your thoughts. You are doubting yourself and giving into these negative emotions, this is restricting you from succeeding.",
+    advice: "To move forward, you will need to evaluate your past experiences in order to learn from them. Take the time to release any guilt or sadness about the past. This purging process will leave you refreshed and ready to take on any new challenges."
   },
   {
-    name: 'world',
+    name: 'The World',
     img: 'images/major-arcana/the-world.jpg',
-    situation: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-    obstacle: "obstable reading",
-    advice: "advice reading"
+    situation: "When The World card appears in a Tarot reading, you are glowing with a sense of wholeness, achievement, fulfilment, and completion. A long-term project, period of study, relationship or career has come full circle, and you are now reveling in the sense of closure and accomplishment. This card could represent graduation, a marriage, the birth of a child, or achieving a long-held dream or aspiration. You have finally accomplished your goal or purpose. Everything has come together, and you are in the right place, doing the right thing, achieving what you have envisioned. You feel whole and complete.",
+    obstacle: "However, you are struggling with impatience. You may opt for the easiest or quickest path to attain your goal, but it won't lead to the outcome you intend.",
+    advice: "Don’t be afraid to set stretch goals for yourself, even if it means enduring hardships or challenges along the way, You need to experience the trials and tribulations along the way so you can learn and grow."
   }
 ]
 
