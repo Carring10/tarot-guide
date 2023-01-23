@@ -31,7 +31,7 @@ const cardArray = [
     name: 'The Emperor',
     img: 'images/major-arcana/the-emperor.jpg',
     situation: "The Emperor suggests that you are stepping into a leadership role. It could be taking the lead on a project at work, or you may be known as the 'rock' for a friend or family who rely on your stability and security.",
-    obstacle: "You are being held back by someone domineering and rigid in their thinking. The card can suggest an over-use and abuse of authoritative power surrounding you. It could originate from you or from another person, often a boss, partner or father figure.",
+    obstacle: "But, you are being held back by someone domineering and rigid in their thinking. The card can suggest an over-use and abuse of authoritative power surrounding you. It could originate from you or from another person, often a boss, partner or father figure.",
     advice: "Take this as a sign to work towards stability by practicing hard work and discipline to bring you closer to reaching your goals. You will benefit from consulting an authority figure in your life, either a parent or boss could act as a mentor."
   },
   {
@@ -77,46 +77,46 @@ const cardArray = [
     advice: "To make the most of the situation, The Wheel of Fortune is here to remind you that life is in a constant state of change.  If you’re going through a difficult time rest assured that it will get better from here. Good luck and good fortune will make their return in time. Similarly, if things are going well, know this, too, will change and life may return to ‘normal’ soon. This cycle shows why it is so important to cherish the blissful moments in your."
   },
   {
-    name: 'justice',
+    name: 'Justice',
     img: 'images/major-arcana/justice.jpg',
-    situation: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-    obstacle: "obstable reading",
-    advice: "advice reading"
+    situation: "You are in a situation where you are seeking the truth. Be prepared to know that things are not always as clear cut as you think.",
+    obstacle: "Impeding you from moving forward is denial. You may be struggling from guilt about what you have or haven't done. Or you are having trouble accepting an unfair outcome.",
+    advice: "It will benefit you to be aware of the impact your decisions will have on your well-being and the well-being of others. Be ready to stand by your decisions as you will be held to account for the choices you make."
   },
   {
-    name: 'hanged man',
+    name: 'The Hanged Man',
     img: 'images/major-arcana/the-hanged-man.jpg',
-    situation: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-    obstacle: "obstable reading",
-    advice: "advice reading"
+    situation: "When the Hanged Man appears, it's an indicator that something in your life may be coming to an unexpected and abrupt halt.",
+    obstacle: "However, you are feeling stuck and restricted in your life. It could be due to something out of your control, or maybe you are unhappy and resisting your current circumstances.",
+    advice: "You are being called to change your perspective and shift your energy and may find that separating yourself from your everyday life is helpful, it could be as simple as going for a walk in nature. Change up your routine so you can start to shift your energy and flow more freely again."
   },
   {
-    name: 'death',
+    name: 'Death',
     img: 'images/major-arcana/death.jpg',
-    situation: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-    obstacle: "obstable reading",
-    advice: "advice reading"
+    situation: "Death symbolizes a time of significant transformation, change, and transition. It could be a literal change, like moving or a new job, or it could be a metaphorical change, like going through a personal transformation.",
+    obstacle: "Death can mean that you are on the verge of meaningful change but are resisting it. You may be reluctant to let go, or you may not know how to make the change you need. You still carry harmful viewpoints from the past that may interfere with a new opportunity. Because of your refusal, life has stagnated, and you feel stuck in limbo.",
+    advice: "Death reversed offers you the opportunity to embrace change rather than resist it. See what wonderful possibilities become available to you as you say ‘yes’ to change. As you learn to release the past and surrender to the present, the future becomes even brighter."
   },
   {
-    name: 'temperance',
+    name: 'Temperance',
     img: 'images/major-arcana/temperance.jpg',
-    situation: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-    obstacle: "obstable reading",
-    advice: "advice reading"
+    situation: "The Temperance card shows that you have a clear, long-term vision of what you want to achieve. You are not rushing things along; instead, you are taking your time to ensure that you do the best job you can. You know you need a moderate, guided approach to reach your goals.",
+    obstacle: "Yet, you are experiencing conflict because you're in a period of self-evaluation in which you are considering your priorities. You may feel called in one direction, but your life is not aligning with this decision. Be prepared that this shift will cause tension and even conflict as you align yourself with personal goals.",
+    advice: "This card calls on you to remain calm, even when life feels stressful or frantic. Maintain an even temperament and manage your emotions. You have learned to keep composed in stressful situations. Little things don’t get to you, thanks to your seemingly abundant source of patience. Your respect for balance and tranquillity is what will help you achieve and experience fulfilment in your life."
   },
   {
-    name: 'devil',
+    name: 'Devil',
     img: 'images/major-arcana/the-devil.jpg',
-    situation: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-    obstacle: "obstable reading",
-    advice: "advice reading"
+    situation: "You may be at the effect of negative habits, dependencies, behaviors, thought patterns, relationships, and addictions. You have found yourself trapped between the short-term pleasure you receive and the longer-term pain you experience.",
+    obstacle: "In spite of that, you may be feeling like you have no control over your impulses. Deep down, though, you know it’s to your detriment, and you are only doing yourself (and often others) a disservice when you cave in to these lower needs and desires.",
+    advice: "The Devil Reversed calls on you to confront your inner fears and anxieties to free yourself from the chains that bind you to your limiting beliefs and unhealthy attachments. Eliminate those things you know are harmful to you and your inner psyche. It may be about creating a healthier diet, watching less television, quitting smoking, spending more time with your loved ones, or focusing more on your goals."
   },
   {
-    name: 'tower',
+    name: 'Tower',
     img: 'images/major-arcana/the-tower.jpg',
-    situation: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-    obstacle: "obstable reading",
-    advice: "advice reading"
+    situation: "When The Tower card appears in a Tarot reading, expect the unexpected – massive change, upheaval, destruction and chaos. It may be a divorce, death of a loved one, financial failure, health problems, natural disaster, job loss or any event that shakes you to your core, affecting you spiritually, mentally and physically. There’s no escaping it. Change is here to tear things up, create chaos and destroy everything in its path.",
+    obstacle: "However, you are feeling pain and turmoil that has come from a significant change in your life.",
+    advice: "Keep in mind, every challenge that you overcome will allow growth. You will grow stronger, wiser, and more resilient as you develop a new perspective on life."
   },
   {
     name: 'star',
