@@ -117,3 +117,18 @@ header {
 .front {
   height: 250px;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.button {
+  width: 250px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.63);
+  opacity: 0;
+  transition: opacity 3s;
+}

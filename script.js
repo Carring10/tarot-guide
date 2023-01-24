@@ -157,6 +157,7 @@ const cardArray = [
 
 const cards = document.querySelector('.cards');
 const reading = document.querySelector('.reading');
+const button = document.querySelector('.button');
 
 // spread array into a list of arguments to avoid "NaN" output
 const shuffledCards = [...cardArray].sort(() => 0.5 - Math.random());
@@ -238,6 +239,7 @@ function revealReading() {
       const header = document.getElementById('header');
 
       reading.style.opacity = 1;
+      button.style.opacity = 1;
       header.textContent = "Your Reading Foretells...";
     }, 1500)
   }
@@ -256,6 +258,12 @@ function fadeOutCards() {
     }
   }, 80)
 }
+
+function refreshPage() {
+  location.reload();
+}
+
+button.addEventListener('click', refreshPage);
 
 // to prevent errors on homepage
 if (window.location.pathname == '/reading.html') {
