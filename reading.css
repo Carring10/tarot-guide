@@ -31,6 +31,7 @@ a {
   font-family: 'Cinzel', serif;
   color: white;
   border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.63);
   border-radius: 5px;
   transition: 0.3s;
 }
@@ -128,8 +129,7 @@ header {
   width: 250px;
   text-align: center;
   cursor: auto;
-  background-color: rgba(0, 0, 0, 0.63);
   opacity: 0;
-  transition: opacity 3s;
   transition: 0.3s;
+  transition: opacity 3s;
 }
