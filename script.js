@@ -149,7 +149,7 @@ const cardArray = [
   {
     name: 'The World',
     img: 'images/major-arcana/the-world.jpg',
-    situation: "When The World card appears in a Tarot reading, you are glowing with a sense of wholeness, achievement, fulfilment, and completion. A long-term project, period of study, relationship or career has come full circle, and you are now reveling in the sense of closure and accomplishment. This card could represent graduation, a marriage, the birth of a child, or achieving a long-held dream or aspiration. You have finally accomplished your goal or purpose. Everything has come together, and you are in the right place, doing the right thing, achieving what you have envisioned. You feel whole and complete.",
+    situation: "When The World card appears in a Tarot reading, you are glowing with a sense of wholeness, achievement, fulfilment, and completion. A long-term project, period of study, relationship or career has come full circle, and you are now reveling in the sense of closure and accomplishment. This card could represent graduation, a marriage, the birth of a child, or achieving a long-held dream or aspiration. You have finally accomplished your goal or purpose.",
     obstacle: "However, you are struggling with impatience. You may opt for the easiest or quickest path to attain your goal, but it won't lead to the outcome you intend.",
     advice: "Don’t be afraid to set stretch goals for yourself, even if it means enduring hardships or challenges along the way, You need to experience the trials and tribulations along the way so you can learn and grow."
   }
@@ -240,6 +240,7 @@ function revealReading() {
 
       reading.style.opacity = 1;
       button.style.opacity = 1;
+      button.style.cursor = 'pointer';
       header.textContent = "Your Reading Foretells...";
     }, 1500)
   }

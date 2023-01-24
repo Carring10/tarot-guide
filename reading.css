@@ -127,8 +127,9 @@ header {
 .button {
   width: 250px;
   text-align: center;
-  cursor: pointer;
+  cursor: auto;
   background-color: rgba(0, 0, 0, 0.63);
   opacity: 0;
   transition: opacity 3s;
+  transition: 0.3s;
 }
