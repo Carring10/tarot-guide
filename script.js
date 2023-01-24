@@ -45,7 +45,7 @@ const cardArray = [
     name: 'The Lovers',
     img: 'images/major-arcana/the-lovers.jpg',
     situation: "Looks like you have love in the forecast. This can indicate a relationship, and though it is usually romantic in nature, it could be any sort of meaningful relationship where good chemistry is involved. The Lovers can also represent choice, the choice about who you want to be in this lifetime, how you connect with others and on what level, and about what you will and won’t stand for.",
-    obstacle: "However, strained relationships are clouding your conscious. You're out of sync with those around you, you may find your relationships are strained and communication is challenging. ",
+    obstacle: "However, strained relationships are clouding your conscious. You're out of sync with those around you, you may find your relationships are tense and communication is challenging. ",
     advice: "To overcome this, this card is a sign that honesty with yourself and others will help you to become clear about your personal values and beliefs. Staying true to yourself will help you make decisions that are authentic to you and your philosophy."
   },
   {
@@ -109,7 +109,7 @@ const cardArray = [
     img: 'images/major-arcana/the-devil.jpg',
     situation: "You may be at the effect of negative habits, dependencies, behaviors, thought patterns, relationships, and addictions. You have found yourself trapped between the short-term pleasure you receive and the longer-term pain you experience.",
     obstacle: "In spite of that, you may be feeling like you have no control over your impulses. Deep down, though, you know it’s to your detriment, and you are only doing yourself (and often others) a disservice when you cave in to these lower needs and desires.",
-    advice: "The Devil Reversed calls on you to confront your inner fears and anxieties to free yourself from the chains that bind you to your limiting beliefs and unhealthy attachments. Eliminate those things you know are harmful to you and your inner psyche. It may be about creating a healthier diet, watching less television, quitting smoking, spending more time with your loved ones, or focusing more on your goals."
+    advice: "To remedy this, The Devil calls on you to confront your inner fears and anxieties to free yourself from the chains that bind you to your limiting beliefs and unhealthy attachments. Eliminate those things you know are harmful to you and your inner psyche. It may be about creating a healthier diet, watching less television, quitting smoking, spending more time with your loved ones, or focusing more on your goals."
   },
   {
     name: 'The Tower',

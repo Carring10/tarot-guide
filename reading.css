@@ -4,10 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   background-color: #111111;
   color: white;
   overflow-y: hidden;
@@ -74,6 +79,7 @@ header {
 
 .reading {
   display: flex;
+  position: relative;
   opacity: 0;
   transition: opacity 3s;
   cursor: auto;
@@ -86,12 +92,14 @@ header {
   flex-direction: row;
   gap: 25px;
   margin: 25px;
+  cursor: auto;
 }
 
 .description {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 400px;
 }
 
 .front {
