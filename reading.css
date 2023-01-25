@@ -90,7 +90,6 @@ header {
   opacity: 0;
   transition: opacity 3s;
   cursor: auto;
-  z-index: 2;
   padding: 50px;
 }
 
