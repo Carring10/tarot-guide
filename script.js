@@ -268,11 +268,14 @@ function refreshPage() {
 
 button.addEventListener('click', refreshPage);
 
+if (window.location.pathname.includes('reading.html')) {
   createCards();
+}
 
+if (window.location.pathname.includes('index.html')) {
   const navbar = document.getElementById('navbar');
   const sticky = navbar.offsetTop;
-
+  
   function addStickyClass() {
     if (window.pageYOffset >= sticky) {
       navbar.classList.add('sticky')
@@ -280,12 +283,11 @@ button.addEventListener('click', refreshPage);
       navbar.classList.remove('sticky');
     }
   }
-
+  
   window.onscroll = function () {
     addStickyClass()
   };
-
-
+}
 
 
 
