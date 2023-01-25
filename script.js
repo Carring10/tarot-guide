@@ -171,6 +171,7 @@ function createCards() {
     card.setAttribute('class', 'card');
     back.setAttribute('class', 'back');
     back.setAttribute('src', 'images/card-back.png');
+    back.setAttribute('alt', 'Back of Tarot Card');
 
     cards.appendChild(card);
     card.appendChild(back);
@@ -203,6 +204,7 @@ function revealReading() {
       img.setAttribute('src', chosenCards[i].img);
       img.setAttribute('id', i);
       img.setAttribute('class', 'front');
+      img.setAttribute('alt', 'Rider Waite Tarot Card');
 
       reading.appendChild(content);
       content.appendChild(img);
