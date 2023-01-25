@@ -268,6 +268,7 @@ function refreshPage() {
 
 button.addEventListener('click', refreshPage);
 
+// only run function calls on respective html page
 if (window.location.pathname.includes('/reading.html')) {
   createCards();
 }
