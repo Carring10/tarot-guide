@@ -269,11 +269,11 @@ function refreshPage() {
 button.addEventListener('click', refreshPage);
 
 // only run function calls on respective html page
-if (window.location.pathname.includes('/' || '/reading.html')) {
+if (window.location.pathname.includes('/reading.html')) {
   createCards();
 }
 
-if (window.location.pathname.includes('/index.html')) {
+if (window.location.pathname.includes('/' || '/index.html')) {
   const navbar = document.getElementById('navbar');
   const sticky = navbar.offsetTop;
   
