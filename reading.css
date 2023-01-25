@@ -73,7 +73,6 @@ header {
   border: 1px solid black;
   border-radius: 3%;
   transition: 0.5s;
-  z-index: 1;
 }
 
 .back:hover {
@@ -90,6 +89,7 @@ header {
   opacity: 0;
   transition: opacity 3s;
   cursor: auto;
+  z-index: 2;
   padding: 50px;
 }
 
