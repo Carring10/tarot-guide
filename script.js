@@ -267,13 +267,10 @@ function refreshPage() {
 }
 
 button.addEventListener('click', refreshPage);
-
 // to prevent errors on homepage
-if (window.location.pathname == '/reading.html') {
-  createCards();
-}
 
-if (window.location.pathname == '/index.html') {
+  createCards();
+
   const navbar = document.getElementById('navbar');
   const sticky = navbar.offsetTop;
 
@@ -288,7 +285,7 @@ if (window.location.pathname == '/index.html') {
   window.onscroll = function () {
     addStickyClass()
   };
-}
+
 
 
 
