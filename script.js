@@ -157,7 +157,7 @@ const cardArray = [
 
 const cards = document.querySelector('.cards');
 const reading = document.querySelector('.reading');
-const button = document.querySelector('.button');
+const button = document.querySelector('.button-container');
 
 // spread array into a list of arguments to avoid "NaN" output
 const shuffledCards = [...cardArray].sort(() => 0.5 - Math.random());
@@ -242,7 +242,6 @@ function revealReading() {
 
       reading.style.opacity = 1;
       button.style.opacity = 1;
-      button.style.cursor = 'pointer';
       header.textContent = "Your Reading Foretells...";
     }, 1500)
   }
