@@ -193,6 +193,7 @@ function createCards() {
 function revealReading() {
   if (chosenCards.length === 3) {
     for (let i = 0; i < chosenCards.length; i++) {
+
       const content = document.createElement('div');
       const description = document.createElement('div');
       const img = document.createElement('img');
@@ -236,9 +237,12 @@ function revealReading() {
     }
 
     fadeOutCards();
+
     // fade in reading
     setTimeout(() => {
       const header = document.getElementById('header');
+      // the results take the place of the cards container
+      cards.style.position = 'absolute';
 
       reading.style.opacity = 1;
       button.style.opacity = 1;
