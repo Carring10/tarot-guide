@@ -186,6 +186,12 @@ function createCards() {
       shuffledCards.shift();
 
       revealReading();
+
+      function refreshPage() {
+        location.reload();
+      }
+      
+      button.addEventListener('click', refreshPage);
     }, { once: true })
   }
 }
@@ -265,18 +271,12 @@ function fadeOutCards() {
   }, 80)
 }
 
-function refreshPage() {
-  location.reload();
-}
-
-button.addEventListener('click', refreshPage);
-
 // only run function calls on respective html page
 if (window.location.pathname.includes('/reading.html')) {
   createCards();
 }
 
-if (window.location.pathname.includes('/' || '/index.html')) {
+if (window.location.pathname.includes('/index.html')) {
   const navbar = document.getElementById('navbar');
   const sticky = navbar.offsetTop;
   
