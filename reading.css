@@ -140,3 +140,17 @@ button:hover {
   color: #f8be4a;
   border-color: #f8be4a;
 }
+
+@media screen and (max-width: 1800px){
+  body {
+    overflow: scroll;
+  }
+
+  .reading {
+    flex-wrap: wrap;
+  }
+
+  .button-container {
+    margin-bottom: 50px;
+  }
+}
