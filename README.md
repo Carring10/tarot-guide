@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Learn what each tarot card means with upright and reversed definitions, as well as a short description of what each suit represents. See the cards in action with a randomized fortune telling.
+A web application built with JavaScript, HTML, and CSS that provides a comprehensive guide to reading tarot cards, along with a feature that generates random tarot readings. Whether you're a beginner or an experienced tarot reader, this application provides valuable insights and interpretations of tarot card meanings and spreads. Start your journey into the mystical world of tarot and discover new perspectives with Tarot Guide and Random Reading Generator!
 
 ## Visuals
 
